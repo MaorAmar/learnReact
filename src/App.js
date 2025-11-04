@@ -6,6 +6,7 @@ import CountDown from './Components/CountDown';
 import TodayTime from './Components/TodayTime';
 import InputViewer from './Components/InputViewer';
 import MyDivContainer from './Components/MyDivContainer'; 
+import Counter from './Components/Counter';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <TodayTime /> 
         <InputViewer />
         <MyDivContainer />
+        <Counter/>
       </header>
     </div>
   );

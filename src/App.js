@@ -3,7 +3,7 @@ import './App.css';
 import CountUp from './Components/CountUp';
 import CountButton from './Components/CountButton';
 import CountDown from './Components/CountDown';
-
+import TodayTime from './Components/TodayTime';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
          <CountUp />
          <CountButton />
          <CountDown count={10} />
+          <TodayTime /> 
       </header>
     </div>
   );

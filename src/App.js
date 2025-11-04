@@ -7,6 +7,7 @@ import TodayTime from './Components/TodayTime';
 import InputViewer from './Components/InputViewer';
 import MyDivContainer from './Components/MyDivContainer'; 
 import Counter from './Components/Counter';
+import TableRow from './Components/TableRow';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <InputViewer />
         <MyDivContainer />
         <Counter/>
+        <TableRow />
       </header>
     </div>
   );

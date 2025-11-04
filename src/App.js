@@ -1,34 +1,18 @@
 
 import './App.css';
-import TodayTime from './Components/TodayTime';
+import Birthday from './Components/Birthday';
 
 
 function App() {
-  //ans 2
-  const numbers = [];
-  for (let i = 10; i > 0; i--){
-    numbers.push(i);
-  }
-  const addNumbers = numbers.map((number,index)=>
-    <li key = {index}>{number}</li>
-  );
-  //and 3
   const user = { 
-    name: 'Maor', 
-    lastName: 'Amar', 
-    city: 'Ramat Gan', 
-    id: '666', 
+    name: 'Moshe', 
+    age: 18, 
   }
-  
-  const users = Object.keys(user).map((val, index) => (
-    <span key={index}>{val} : {user[val]} </span>
-  ));
   return (
     <div className="App">
       <header className="App-header">
-        <TodayTime />
-        <ul>{addNumbers}</ul>
-        <ul>{users}</ul>
+         <Birthday name = {user.name} age = {user.age}/>
+         {/*{user.age > 18 ? <span>You are OK!</span> : <span>You are underaged!</span>}  אופציה אחרת*/}
       </header>
     </div>
   );

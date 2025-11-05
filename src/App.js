@@ -25,6 +25,7 @@ function App() {
         <Counter/>
         <TableRow />
         <CountViewer count={11} />
+        <CounterSec />
       </header>
     </div>
   );

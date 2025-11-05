@@ -1,7 +1,9 @@
 import React from 'react';
 
 function WelCome(props) {
-  const { prefix, name }  = props.user;
-  return(<span>Hello, {prefix} {name}</span>) 
+  const [greeting, setGreeting] = useState(`Hello ${props.name}!`); 
+  
+  return(
+    <div>{greeting}</div>) 
 }
 export default WelCome;

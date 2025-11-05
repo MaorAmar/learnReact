@@ -9,6 +9,8 @@ import MyDivContainer from './Components/MyDivContainer';
 import Counter from './Components/Counter';
 import TableRow from './Components/TableRow';
 import CountViewer from './Components/CountViewer';
+import CounterSec from './Components/counter/Counter';
+
 
 function App() {
   return (

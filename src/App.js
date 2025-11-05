@@ -8,6 +8,7 @@ import InputViewer from './Components/InputViewer';
 import MyDivContainer from './Components/MyDivContainer'; 
 import Counter from './Components/Counter';
 import TableRow from './Components/TableRow';
+import CountViewer from './Components/CountViewer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <MyDivContainer />
         <Counter/>
         <TableRow />
+        <CountViewer count={11} />
       </header>
     </div>
   );

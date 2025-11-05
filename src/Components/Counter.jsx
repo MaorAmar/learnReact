@@ -1,11 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {console.log('re-rendered!')});
+  
   function toIncrease() {
     setCount(count + 1);
   }
+
   function toDecrease() {
     setCount(count - 1);
   }

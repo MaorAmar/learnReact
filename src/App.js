@@ -10,6 +10,8 @@ import Counter from "./Components/Counter";
 import TableRow from "./Components/TableRow";
 import CountViewer from "./Components/CountViewer";
 import CounterSec from "./Components/counter/Counter";
+import ErrorBoundary from "./Components/ErrorBoundary";
+import BrokenComponent from "./Components/BrokenComponent";
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
         <CounterSec />
         <Welcome name="Maor" />
         <TodayTime />
+        <ErrorBoundary>
+          <BrokenComponent />
+        </ErrorBoundary>
       </header>
     </div>
   );

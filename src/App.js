@@ -1,16 +1,15 @@
-
-import './App.css';
-import CountUp from './Components/CountUp';
-import CountButton from './Components/CountButton';
-import CountDown from './Components/CountDown';
-import TodayTime from './Components/TodayTime';
-import InputViewer from './Components/InputViewer';
-import MyDivContainer from './Components/MyDivContainer'; 
-import Counter from './Components/Counter';
-import TableRow from './Components/TableRow';
-import CountViewer from './Components/CountViewer';
-import CounterSec from './Components/counter/Counter';
-
+import "./App.css";
+import Welcome from "./Components/Welcome";
+import CountUp from "./Components/CountUp";
+import CountButton from "./Components/CountButton";
+import CountDown from "./Components/CountDown";
+import TodayTime from "./Components/TodayTime";
+import InputViewer from "./Components/InputViewer";
+import MyDivContainer from "./Components/MyDivContainer";
+import Counter from "./Components/Counter";
+import TableRow from "./Components/TableRow";
+import CountViewer from "./Components/CountViewer";
+import CounterSec from "./Components/counter/Counter";
 
 function App() {
   return (
@@ -19,12 +18,14 @@ function App() {
         <CountUp />
         <CountButton />
         <CountDown count={10} />
-        <TodayTime /> 
         <InputViewer />
         <MyDivContainer />
-        <Counter/>
+        <Counter />
         <TableRow />
         <CountViewer count={11} />
+        <CounterSec />
+        <Welcome name="Maor" />
+        <TodayTime />
       </header>
     </div>
   );

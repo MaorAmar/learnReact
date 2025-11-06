@@ -12,6 +12,7 @@ import CountViewer from "./Components/CountViewer";
 import CounterSec from "./Components/counter/Counter";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import BrokenComponent from "./Components/BrokenComponent";
+import CountUpClick from "./Components/CountUpClick";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <ErrorBoundary>
           <BrokenComponent />
         </ErrorBoundary>
+        <CountUpClick />
       </header>
     </div>
   );

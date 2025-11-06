@@ -13,6 +13,7 @@ import CounterSec from "./Components/counter/Counter";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import BrokenComponent from "./Components/BrokenComponent";
 import CountUpClick from "./Components/CountUpClick";
+import Cyber from "./Components/Cyber";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <BrokenComponent />
         </ErrorBoundary>
         <CountUpClick />
+        <Cyber />
       </header>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; 
-import Input from './Input';
-import Button from './Button';
+import Button from '@mui/material/Button'; 
+import TextField from '@mui/material/TextField'; 
+
 function InputViewer() { 
   const [text, setText] = useState('');
   const [viewText, setViewText] = useState('');
@@ -16,7 +17,7 @@ function InputViewer() {
   return ( 
     <div> 
         <span>{viewText}</span> 
-        <Input onChange={changeHandler} type="text" /> 
+        <TextField onChange={changeHandler}/> 
         <Button onClick = {changHandler}>Click me</Button>
     </div> 
   ); 

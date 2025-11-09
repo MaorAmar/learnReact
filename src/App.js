@@ -14,6 +14,8 @@ import ErrorBoundary from "./Components/ErrorBoundary";
 import BrokenComponent from "./Components/BrokenComponent";
 import CountUpClick from "./Components/CountUpClick";
 import Cyber from "./Components/Cyber";
+import TableViewer from "./Components/TableViewer";
+import CardsGrid from "./Components/CardsGrid";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         </ErrorBoundary>
         <CountUpClick />
         <Cyber />
+        <TableViewer/>
+        <CardsGrid/>
       </header>
     </div>
   );

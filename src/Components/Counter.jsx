@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Button from '@mui/material/Button'; 
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -19,9 +21,11 @@ function Counter() {
   }
   return (
     <div>
-      <button onClick={toIncrease}>increase</button>
-      <button onClick={toDecrease}>decrease</button>
-      <button onClick={reset}>reset</button>
+      <ButtonGroup variant="contained" aria-label="Basic button group">
+        <Button onClick={toIncrease}>increase</Button>
+        <Button onClick={toDecrease}>decrease</Button>
+        <Button onClick={reset}>reset</Button>
+      </ButtonGroup>
       <div>{count}</div>
     </div>
   );

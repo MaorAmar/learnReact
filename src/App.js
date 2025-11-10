@@ -17,12 +17,14 @@ import Cyber from "./Components/Cyber";
 import TableViewer from "./Components/TableViewer";
 import CardsGrid from "./Components/CardsGrid";
 import MyContainer from './Components/MyContainer'
+import Router from './Components/Routing/Router'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <CountButton />
+        {/* <CountButton />
         <InputViewer />
         <Counter />
         <CounterSec />
@@ -34,7 +36,8 @@ function App() {
         <Cyber />
         <TableViewer/>
         <CardsGrid/>
-        <MyContainer />
+        <MyContainer /> */}
+        <Router />
       </header>
     </div>
   );

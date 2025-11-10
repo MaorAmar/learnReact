@@ -16,21 +16,16 @@ import CountUpClick from "./Components/CountUpClick";
 import Cyber from "./Components/Cyber";
 import TableViewer from "./Components/TableViewer";
 import CardsGrid from "./Components/CardsGrid";
+import MyContainer from './Components/MyContainer'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <CountUp />
         <CountButton />
-        <CountDown count={10} />
         <InputViewer />
-        <MyDivContainer />
         <Counter />
-        <TableRow />
-        <CountViewer count={11} />
         <CounterSec />
-        <Welcome name="Maor" />
         <TodayTime />
         <ErrorBoundary>
           <BrokenComponent />
@@ -39,6 +34,7 @@ function App() {
         <Cyber />
         <TableViewer/>
         <CardsGrid/>
+        <MyContainer />
       </header>
     </div>
   );

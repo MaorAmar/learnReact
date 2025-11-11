@@ -1,11 +1,31 @@
-import React, { useState } from "react";
-/*  // קומפוננטה פונקציה
-function Welcome(props) {
-  const [greeting, setGreeting] = useState(`Hello ${props.name}!`);
-  return <div>{greeting}</div>;
-}
-*/
+import React, { useContext } from "react";
+import UserContext from '../UserContext'
+import Button from '@mui/material/Button'; 
 
+function Welcome() {
+  const user = useContext(UserContext).data;
+  const changeUser = useContext(UserContext).changeUser;
+  
+  const newUser = {
+    name: 'Moshe',
+    surName: 'Cohen',
+    city: 'Bat-yam'
+  }
+  function clickHandler(){
+    changeUser(newUser);
+  }
+
+  return (
+    <div>
+      <span> Hello, {user.name} {user.surName}!</span>
+      <Button variant='contained' color = "primary" onClick = {clickHandler}>Load another user</Button>
+    </div>
+  )
+}
+
+
+export default Welcome
+/*
 class Welcome extends React.Component {
   constructor(props) {
     super(props);
@@ -17,3 +37,4 @@ class Welcome extends React.Component {
 }
 
 export default Welcome;
+*/

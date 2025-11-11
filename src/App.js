@@ -16,9 +16,10 @@ import CountUpClick from "./Components/CountUpClick";
 import Cyber from "./Components/Cyber";
 import TableViewer from "./Components/TableViewer";
 import CardsGrid from "./Components/CardsGrid";
-import MyContainer from './Components/MyContainer'
-import MyRouter from './Components/Routing/MyRouter'
-
+import MyContainer from './Components/MyContainer';
+import MyRouter from './Components/Routing/MyRouter';
+import {UserProvider} from './UserContext';
+import Container from './Components/Container'
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
         <TableViewer/>
         <CardsGrid/>
         <MyContainer /> */}
-        <MyRouter />
+        {/* <MyRouter /> */}
+        <Container />
+        
       </header>
     </div>
   );

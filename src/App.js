@@ -17,7 +17,7 @@ import Cyber from "./Components/Cyber";
 import TableViewer from "./Components/TableViewer";
 import CardsGrid from "./Components/CardsGrid";
 import MyContainer from './Components/MyContainer'
-import Router from './Components/Routing/Router'
+import MyRouter from './Components/Routing/MyRouter'
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <TableViewer/>
         <CardsGrid/>
         <MyContainer /> */}
-        <Router />
+        <MyRouter />
       </header>
     </div>
   );

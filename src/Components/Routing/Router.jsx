@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Home from './Home';
-import Help from './Help';
-import About from './About';
+import NiceImage from './NiceImage';
 
 function Router() {
   const [route,setRoute] = useState(window.location.hash.substr(1));
@@ -15,9 +14,7 @@ function Router() {
 
   function getChild() {
     switch(route){
-      case '/about': Child = About;
-      break;
-      case'/help': Child = Help;
+      case '/image': Child = NiceImage;
       break;
       default: Child = Home;
     }
@@ -27,8 +24,7 @@ function Router() {
       {getChild()}
       <h1>App</h1>
       <ul>
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/help">Help</a></li>
+        <li><a href="#/image">NiceImage</a></li>
         <li><a href="#/home">Home</a></li>
       </ul>
       <Child/>
